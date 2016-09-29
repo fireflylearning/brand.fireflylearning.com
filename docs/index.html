@@ -71,7 +71,7 @@
 		margin-bottom: 25em;
 	}
 
-	div#main a:link, div#main a:visited {
+	div#main a {
 		color: #2081c4;
 	}
 
@@ -200,6 +200,41 @@
 		max-width: 60em;
 	}
 
+	.image-set {
+		margin-left: 0;
+		border: 1px solid #dedede;
+		-webkit-border-radius: 5px;
+		border-radius: 5px;
+		padding: 1.25rem;
+		margin-bottom: 1.875rem;
+		zoom: 1;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-around;
+	}
+
+	.image-set figure {
+		margin: 0;
+		margin-bottom: 1.875rem;
+		display: flex;
+		flex-direction: column;
+		width: 31%;
+		margin: 1%;
+		box-sizing: border-box;
+	}
+
+	.image-set figure:nth-of-type(3n) {
+		margin-right: 0;
+	}
+
+	.image-set figure:nth-of-type(3n+1) {
+		clear: left;
+	}
+
+	.image-set p {
+		clear: left;
+	}
+
 	figure {
 		margin-left: 0;
 		border: 1px solid #dedede;
@@ -207,6 +242,8 @@
 		border-radius: 5px;
 		padding: 20px;
 		margin-bottom: 1.875rem;
+		display: flex;
+		flex-direction: column;
 	}
 
 	figure img {
@@ -218,42 +255,28 @@
 		box-sizing: border-box;
 	}
 
-	.image-set {
-		margin-left: 0;
-		border: 1px solid #dedede;
-		-webkit-border-radius: 5px;
-		border-radius: 5px;
-		padding: 1.25rem;
-		margin-bottom: 1.875rem;
-		zoom: 1;
+	figure.red {
+		background-color: #AC1D1D;
+		color: white;
 	}
 
-	.image-set:after, .image-set:before {
-		content: "";
-		display: table;
+	figure.stacked img {
+		display: flex;
+		align-self: center;
 	}
 
-	.image-set:after {
-		clear: both;
+	div#main figure.red a {
+		color: white;
+		opacity: 0.9;
 	}
 
-	.image-set figure {
-		margin: 0;
-		margin-bottom: 1.875rem;
-		display: block;
-		float: left;
-		width: 30%;
-		margin-right: 4.5%;
-		border: none;
-		box-sizing: border-box;
+	div#main figure.red a:active, div#main figure.red a:hover {
+		color: white;
+		opacity: 1
 	}
 
-	.image-set figure:nth-of-type(3n) {
-		margin-right: 0;
-	}
-
-	.image-set figure:nth-of-type(3n+1) {
-		clear: left;
+	figure figcaption {
+		text-align: left;
 	}
 
 	.chip-holder {
@@ -282,10 +305,6 @@
 		border-radius: 5px;
 	}
 
-	.red-background {
-		background-color: #AC1D1D;
-	}
-
 	.missing-photo {
 		padding: 3.125rem;
 		font-style: italic;
@@ -303,17 +322,18 @@
 			<li><a href="#elements">Brand elements</a>
 				<ul>
 					<li><a href="#company-name">The name of the company</a></li>
-					<li><a href="#colour">Colour</a></li>
 					<li><a href="#the-logo">The logo</a></li>
-					<li><a href="#the-font">The font</a></li>
+					<li><a href="#colour">Colours</a></li>
+					<li><a href="#fonts">Fonts</a></li>
 					<li><a href="#typography">Typography</a></li>
 					<li><a href="#icons">Icons</a></li>
+					<li><a href="#charts-diagrams">Charts &amp; diagrams</a></li>
 					<li><a href="#patterns-textures">Patterns &amp; textures</a></li>
-					<li><a href="#boxes">Boxes, containers and outlines</a></li>
 					<li><a href="#photography">Photography</a></li>
+					<li><a href="#screenshots">Screenshots</a></li>
 				</ul>
 			</li>
-			<li><a href="#using-the-brand">Using the brand</a>
+			<li><a href="#using-the-brand">Layouts</a>
 				<ul>
 					<li><a href="#basic-principles">Basic principles</a></li>
 					<li><a href="#optical-alignment">Optical alignment</a></li>
@@ -322,28 +342,6 @@
 					<li><a href="#layouts-to-avoid">Layouts to avoid</a></li>
 				</ul>
 			</li>
-<!--
-			<li><a href="#branded-materials">Branded materials</a>
-				<ul>
-					<li><a href="#brochure">Brochure</a></li>
-					<li><a href="#business-cards">Business cards</a></li>
-					<li><a href="#leaflets">Leaflets</a></li>
-					<li><a href="#stands-events">Stand for events</a></li>
-					<li><a href="#popup-banners">Popup banners</a></li>
-					<li><a href="#merchandise">Merchandise</a></li>
-				</ul>
-			</li>
-			<li><a href="#templates">Brand templates and downloadables</a>
-				<ul>
-					<li><a href="#sales-templates">Sales templates</a></li>
-					<li><a href="#email-footers">Email footers</a></li>
-					<li><a href="#letterheads">Letterheads</a></li>
-					<li><a href="#compliment-slips">Compliment slips</a></li>
-					<li><a href="#invoices-orders">Invoices, purchase orders, etc.</a></li>
-					<li><a href="#recruitment">Recruitment</a></li>
-				</ul>
-			</li>
--->
 		</ul>
 	</nav>
 
@@ -412,6 +410,133 @@
 			<p>For sales and marketing literature we have an additional phrase which encapsulates the 'social proof' of how good Firefly is, and encourages people to find out more:</p>
 
 			<p><big><strong>The learning platform trusted by leading schools.</strong></big></p>
+
+		</section>
+
+		<section id="the-logo">
+
+			<h3>The logo</h3>
+
+			<p>The logo is available in several styles. They are available in a range of image formats suitable for on-screen and print use.</p>
+
+			<p>The white logo is designed for use on (ideally) red backgrounds, or darker and soft-focus photography.</p>
+
+			<h4 id="logo-variants">Logo variants</h4>
+
+			<figure class="red">
+				<img src="images/firefly-wide-rgb-white.png" width="60%" />
+				<figcaption>This is the preferred logo and colour application.<br /><a href="downloads/firefly-logo-white.zip">Download</a></figcaption>
+			</figure>
+
+			<figure>
+				<img src="images/firefly-wide-rgb-flat-colour.png" width="60%" />
+				<figcaption>Use this on white backgrounds only. The logo is a single shade of red. The old version with shades of red should not be used.<br /><a href="downloads/firefly-logo-flat.zip">Download</a></figcaption>
+			</figure>
+
+			<figure>
+				<img src="images/firefly-wide-rgb-black.png" width="60%" />
+				<figcaption>The black logo is only for use when colour is impossible, such as black and white printing, e-ink and other monochrome displays. It should only be used with a flat white background.<br /><a href="downloads/firefly-logo-black.zip">Download</a></figcaption>
+			</figure>
+
+			<div class="image-set">
+				<figure class="red stacked">
+					<img src="images/firefly-stacked-rgb-white.png" width="60%" />
+					<figcaption><a href="downloads/firefly-logo-stacked-white.zip">Download</a></figcaption>
+				</figure>
+
+				<figure class="stacked">
+					<img src="images/firefly-stacked-rgb-flat-colour.png" width="60%" />
+					<figcaption><a href="downloads/firefly-logo-stacked-flat.zip">Download</a></figcaption>
+				</figure>
+
+				<figure class="stacked">
+					<img src="images/firefly-stacked-rgb-black.png" width="60%" />
+					<figcaption><a href="downloads/firefly-logo-stacked-black.zip">Download</a></figcaption>
+				</figure>
+
+				<p>This should <em>only</em> be used centred on tall, narrow applications such as hanging banners and pull-up stands. <strong>Do not use it anywhere else.</strong></p>
+			</div>
+
+			<div class="image-set">
+				<figure class="red stacked">
+					<img src="images/firefly-logo-only-rgb-white.png" width="60%" />
+					<figcaption><a href="downloads/firefly-logo-symbol-only.zip">Download</a></figcaption>
+				</figure>
+
+				<figure class="stacked">
+					<img src="images/firefly-logo-only-rgb-colour.png" width="60%" />
+					<figcaption><a href="downloads/firefly-logo-symbol-only.zip">Download</a></figcaption>
+				</figure>
+
+				<figure class="stacked">
+					<img src="images/firefly-logo-only-rgb-black.png" width="60%" />
+					<figcaption><a href="downloads/firefly-logo-symbol-only.zip">Download</a></figcaption>
+				</figure>
+
+				<p>When used on its own, the full logo must have already been used elsewhere in the document or product. This is good used as an icon on page footers or to end an article. We use it in the main top bar in the Firefly UI. It's available in colour, flat, black and white.</p>
+			</div>
+
+
+			<h4 id="logo-misuse">What not to do with the logo</h4>
+
+			<div class="image-set">
+
+				<figure class="logo-fail">
+					<img src="images/fail-squash.png" />
+					<figcaption>Don't squash the logo.</figcaption>
+				</figure>
+
+				<figure class="logo-fail">
+					<img src="images/fail-recolour.png" />
+					<figcaption>Don't change the logo colour.</figcaption>
+				</figure>
+
+				<figure class="logo-fail">
+					<img src="images/fail-move.png" />
+					<figcaption>Don't move bits about.</figcaption>
+				</figure>
+
+				<figure class="logo-fail">
+					<img src="images/fail-effects.png" />
+					<figcaption>Don't add effects to the logo.</figcaption>
+				</figure>
+
+				<figure class="logo-fail">
+					<img src="images/fail-overlap.png" />
+					<figcaption>Don't overlap the logo with anything.</figcaption>
+				</figure>
+
+				<figure class="logo-fail">
+					<img src="images/fail-crowd.png" />
+					<figcaption>Don't crowd the logo.</figcaption>
+				</figure>
+
+				<figure class="logo-fail">
+					<img src="images/fail-remake.png" />
+					<figcaption>Don't recreate the logo.</figcaption>
+				</figure>
+
+				<figure class="logo-fail">
+					<img src="images/fail-logotype.png" />
+					<figcaption>Don't use the word on its own.</figcaption>
+				</figure>
+
+				<figure class="logo-fail">
+					<img src="images/fail-add.png" />
+					<figcaption>Don't add things to the logo.</figcaption>
+				</figure>
+
+				<figure class="logo-fail">
+					<img src="images/fail-background.jpg" />
+					<figcaption>Don't use complex distracting backgrounds.</figcaption>
+				</figure>
+
+				<figure class="logo-fail">
+					<img src="images/fail-contrast.png" />
+					<figcaption>Don't lose contrast with the background.</figcaption>
+				</figure>
+
+			</div>
 
 		</section>
 
@@ -521,563 +646,304 @@
 
 		</section>
 
-		<section id="the-logo">
+		<section id="fonts">
 
-		<h3>The logo</h3>
+			<h3>The font</h3>
 
-		<p>The logo is available in several styles. They are available in a range of image formats suitable for on-screen and print use.</p>
-
-		<p>The white logo is designed for use on (ideally) red backgrounds, or darker and soft-focus photography.</p>
-
-		<h4 id="logo-variants">Logo variants</h4>
-
-		<figure>
-			<img src="images/firefly-wide-rgb-white.png" width="40%" class="red-background" />
-			<figcaption>This is the preferred logo and colour application.<br /><a href="downloads/firefly-logo-white.zip">Download this version for screen and print</a>.</figcaption>
-		</figure>
-
-		<figure>
-			<img src="images/firefly-stacked-rgb-white.png" width="30%" class="red-background" />
-			<figcaption>This stacked version is suitable where horizontal space is limited.<br /><a href="downloads/firefly-logo-stacked-white.zip">Download this version for screen and print</a>.</figcaption>
-		</figure>
-
-		<figure>
-			<img src="images/firefly-logo-only-rgb-white.png" width="40%" class="red-background" />
-			<figcaption>The logo symbol can be used on its own to support the brand, but only where the full logo has already been shown.<br /><a href="downloads/firefly-logo-symbol-only.zip">Download this version for screen and print</a>.</figcaption>
-		</figure>
-<!--
-		<figure>
-			<div class="missing-photo">Photos need taking</div>
-			<figcaption>Various examples of the white logo in use.</figcaption>
-		</figure>
--->
-		<p>The red logo is designed for use on white backgrounds only.</p>
-
-		<figure>
-			<img src="images/firefly-wide-rgb-colour.png" width="40%" />
-			<figcaption>This is the preferred logo for use on white backgrounds. The logo symbol has a gradient of colour.<br /><a href="downloads/firefly-logo-colour.zip">Download this version for screen and print</a>.</figcaption>
-		</figure>
-
-		<figure>
-			<img src="images/firefly-stacked-rgb-colour.png" width="30%" />
-			<figcaption>Again, a stacked version for when the horizontal space is limited. The logo symbol has a gradient of colour.<br /><a href="downloads/firefly-logo-stacked-colour.zip">Download this version for screen and print</a>.</figcaption>
-		</figure>
-
-		<figure>
-			<img src="images/firefly-wide-rgb-flat-colour.png" width="40%" />
-			<figcaption>This is the flat colour version. Use it when the gradient can't be reproduced properly (e.g. single colour print).<br /><a href="downloads/firefly-logo-flat.zip">Download this version for screen and print</a>.</figcaption>
-		</figure>
-
-		<figure>
-			<img src="images/firefly-stacked-rgb-flat-colour.png" width="30%" />
-			<figcaption>This is the flat colour version of the stacked logo. Use it when the gradient can't be reproduced properly (e.g. single colour print).<br /><a href="downloads/firefly-logo-stacked-flat.zip">Download this version for screen and print</a>.</figcaption>
-		</figure>
-
-		<figure>
-			<img src="images/firefly-logo-only-rgb-colour.png" width="30%" />
-			<figcaption>When used on its own, the full logo must have already been used elsewhere in the document or product. This is good used as an icon on page footers or to end an article. We use it in the main top bar in the Firefly UI. It's available in colour, flat, black and white.<br /><a href="downloads/firefly-logo-symbol-only.zip">Download this version in all colours for screen and print</a>.</figcaption>
-		</figure>
-<!--
-		<figure>
-			<div class="missing-photo">Photos need taking</div>
-			<figcaption>Various examples of the colour logo in use.</figcaption>
-		</figure>
--->
-		<p>The black logo is only for use when colour is impossible, such as black and white printing, e-ink and other monochrome displays.</p>
-
-		<figure>
-			<img src="images/firefly-wide-rgb-black.png" width="40%" />
-			<figcaption>The logo in black.<br /><a href="downloads/firefly-logo-black.zip">Download this version for screen and print</a>.</figcaption>
-		</figure>
-
-		<figure>
-			<img src="images/firefly-stacked-rgb-black.png" width="40%" />
-			<figcaption>The stacked logo in black.<br /><a href="downloads/firefly-logo-stacked-black.zip">Download this version for screen and print</a>.</figcaption>
-		</figure>
-
-		<h4 id="logo-misuse">What not to do with the logo</h4>
-
-		<div class="image-set">
-
-			<figure class="logo-fail">
-				<img src="images/fail-squash.png" />
-				<figcaption>Don't squash the logo.</figcaption>
+			<figure>
+				<img src="images/akko.png" width="80%" />
+				<figcaption>Akko. The main brand font.</figcaption>
 			</figure>
 
-			<figure class="logo-fail">
-				<img src="images/fail-recolour.png" />
-				<figcaption>Don't change the logo colour.</figcaption>
-			</figure>
+			<p>The Firefly brand font is Akko.</p>
 
-			<figure class="logo-fail">
-				<img src="images/fail-move.png" />
-				<figcaption>Don't move bits about.</figcaption>
-			</figure>
+			<p>This is used for all print and things that are 'like' print - such as PDFs of sales proposals and invoices.</p>
 
-			<figure class="logo-fail">
-				<img src="images/fail-effects.png" />
-				<figcaption>Don't add effects to the logo.</figcaption>
-			</figure>
+			<p>We use Akko for all user interface elements within the Firefly product.</p>
 
-			<figure class="logo-fail">
-				<img src="images/fail-overlap.png" />
-				<figcaption>Don't overlap the logo with anything.</figcaption>
-			</figure>
+			<p>On the wider web, we use Akko for headings and navigation, and Adelle for body text.</p>
 
-			<figure class="logo-fail">
-				<img src="images/fail-crowd.png" />
-				<figcaption>Don't crowd the logo.</figcaption>
-			</figure>
+			<p>The standard font to use is Akko Light. For emphasis use Akko Italic. In place of bold and bold italic use Akko Regular and Akko Regular Italic.</p>
 
-			<figure class="logo-fail">
-				<img src="images/fail-remake.png" />
-				<figcaption>Don't recreate the logo.</figcaption>
-			</figure>
+			<p>For emails, we use Arial. You know what that looks like.</p>
 
-			<figure class="logo-fail">
-				<img src="images/fail-logotype.png" />
-				<figcaption>Don't use the word on its own.</figcaption>
-			</figure>
+			<h4 id="getting-the-font">Getting and using the fonts</h4>
 
-			<figure class="logo-fail">
-				<img src="images/fail-add.png" />
-				<figcaption>Don't add things to the logo.</figcaption>
-			</figure>
+			<p>We have a licence for use on Firefly company computers of Akko Standard, which covers the Western European languages.</p>
 
-			<figure class="logo-fail">
-				<img src="images/fail-background.jpg" />
-				<figcaption>Don't use complex distracting backgrounds.</figcaption>
-			</figure>
+			<p>If you need the font then we will need to arrange a licence for you. The font may only then be used on Firefly work and must be deleted once the work is completed.</p>
 
-			<figure class="logo-fail">
-				<img src="images/fail-contrast.png" />
-				<figcaption>Don't lose contrast with the background.</figcaption>
-			</figure>
-
-		</div>
-
-		</section>
-
-		<section id="the-font">
-
-		<h3>The font</h3>
-
-		<figure>
-			<img src="images/akko.png" width="80%" />
-			<figcaption>Akko. The main brand font.</figcaption>
-		</figure>
-
-		<p>The Firefly brand font is Akko.</p>
-
-		<p>This is used for all print and things that are 'like' print - such as PDFs of sales proposals and invoices.</p>
-
-		<p>We use Akko for all user interface elements within the Firefly product.</p>
-
-		<p>On the wider web, we use Akko for headings and navigation, and Adelle for body text.</p>
-
-		<p>The standard font to use is Akko Light. For emphasis use Akko Italic. In place of bold and bold italic use Akko Regular and Akko Regular Italic.</p>
-
-		<figure>
-			<img src="images/adelle.png" width="80%" />
-			<figcaption>Adelle. The secondary brand font.</figcaption>
-		</figure>
-
-		<p>For the web and intranet the brand font is Adelle. We use this as a web font provided by Fonts.com. Other fonts services can also provide the font.</p>
-
-		<p>For headlines, use Adelle Bold.</p>
-
-		<p>For body text, use Adelle Regular.</p>
-
-		<p>For emails, we use Arial. You know what that looks like.</p>
-
-		<h4 id="getting-the-font">Getting and using the fonts</h4>
-
-		<p>We have a licence for use on Firefly company computers of Akko Standard, which covers the Western European languages.</p>
-
-		<p>If you need the font then we will need to arrange a licence for you. The font may only then be used on Firefly work and must be deleted once the work is completed.</p>
-
-		<p>If you need to use the font for languages from further regions (Eastern Europe, Asia, etc.) we can additionally licence Akko Pro, which has broader support.</p>
+			<p>If you need to use the font for languages from further regions (Eastern Europe, Asia, etc.) we can additionally licence Akko Pro, which has broader support.</p>
 
 		</section>
 
 		<section id="typography">
 
-		<h3>Typography</h3>
+			<h3>Typography</h3>
 
-		<p>Headings, sub-headings and body text should relate to each other so that it's clear to the reader where they are in the document. Aim to make it obvious what's a heading, what's a subheading and what's regular text.</p>
+			<p>Headings, sub-headings and body text should relate to each other so that it's clear to the reader where they are in the document. Aim to make it obvious what's a heading, what's a subheading and what's regular text.</p>
 
-		<figure class="typography-examples">
-			<img src="images/typography-1.png" width="15%" />
-			<img src="images/typography-2.png" width="15%" />
-			<img src="images/typography-3.png" width="15%" />
-			<img src="images/typography-4.png" width="15%" />
-			<img src="images/typography-5.png" width="15%" />
-		</figure>
+			<figure class="typography-examples">
+				<img src="images/typography-1.png" width="15%" />
+				<img src="images/typography-2.png" width="15%" />
+				<img src="images/typography-3.png" width="15%" />
+				<img src="images/typography-4.png" width="15%" />
+				<img src="images/typography-5.png" width="15%" />
+			</figure>
 
-		<p>All text, including headlines, should always be left aligned.</p>
+			<p>All text, including headlines, should always be left aligned.</p>
 
-		<p>Some quotes and paragraphs can be right aligned if it suits the design and they're on the right hand side of a page or layout.</p>
+			<p>Some quotes and paragraphs can be right aligned if it suits the design and they're on the right hand side of a page or layout.</p>
 
-		<p>If possible, avoid centring text. It makes documents hard to scan and creates a chaotic 'bitty' appearance to the layout.</p>
+			<p>If possible, avoid centring text. It makes documents hard to scan and creates a chaotic 'bitty' appearance to the layout.</p>
 
-		<p>Do not ever justify text. Text is justified by altering the spacing between lines and words so that the left and right margins are straight. These adjustments mean more work for the eye to interpret - jumping between spaced out, then squashed, text - than regularly set text would.</p>
+			<p>Do not ever justify text. Text is justified by altering the spacing between lines and words so that the left and right margins are straight. These adjustments mean more work for the eye to interpret - jumping between spaced out, then squashed, text - than regularly set text would.</p>
 
-		<p>Bold text can be used to call attention to individual words and for subheadings in a longer document.</p>
+			<p>Bold text can be used to call attention to individual words and for subheadings in a longer document.</p>
 
-		<p>Italic text should only be used for emphasising short runs of text, quotes, or where a non-English word is used.</p>
+			<p>Italic text should only be used for emphasising short runs of text, quotes, or where a non-English word is used.</p>
 
-		<p>Do not ever italicise headlines.</p>
+			<p>Do not ever italicise headlines.</p>
 
-		<h4 id="margins-line-length-height">Margins, line length and line height</h4>
+			<h4 id="margins-line-length-height">Margins, line length and line height</h4>
 
-		<p>Very short or very long lines of text are hard to read. There is no definite set rule, but aim for around 60–80 characters, roughly 12–15 words.</p>
+			<p>Very short or very long lines of text are hard to read. There is no definite set rule, but aim for around 60–80 characters, roughly 12–15 words.</p>
 
-		<p>Paragraphs do not have indented first lines and are separated vertically by the height of one line.</p>
+			<p>Paragraphs do not have indented first lines and are separated vertically by the height of one line.</p>
 
-		<p>Keep line heights to be roughly 150% of the font size. Again, there's no perfect rule for this, but avoid lines too far apart that the paragraph doesn't look like one thing anymore, or lines too close that characters such as y and j can clash with b and l below them.</p>
+			<p>Keep line heights to be roughly 150% of the font size. Again, there's no perfect rule for this, but avoid lines too far apart that the paragraph doesn't look like one thing anymore, or lines too close that characters such as y and j can clash with b and l below them.</p>
 
-		<h4 id="typesetting-examples">Typesetting examples</h4>
+			<h4 id="typesetting-examples">Typesetting examples</h4>
 
-		<figure>
-			<img src="images/typography-paragraphs.png" width="25%" />
-			<figcaption>Detail of a paragraph showing good line heights.</figcaption>
-		</figure>
+			<figure>
+				<img src="images/typography-paragraphs.png" width="25%" />
+				<figcaption>Detail of a paragraph showing good line heights.</figcaption>
+			</figure>
 
-		<p>For leaflets, brochures and other professionally-printed work, pay attention to the details of the typesetting before sending it to print. Avoid having single words left on their own line at the end of paragraphs or when carried over to a new page. Generally avoid hyphenation too as automatic hyphenation can give odd results.</p>
+			<p>For leaflets, brochures and other professionally-printed work, pay attention to the details of the typesetting before sending it to print. Avoid having single words left on their own line at the end of paragraphs or when carried over to a new page. Generally avoid hyphenation too as automatic hyphenation can give odd results.</p>
 
-		<figure>
-			<img src="images/typography-widows-orphans.png" width="25%" />
-			<figcaption>Stray words on their own are hard to prevent online, but can, and must, be fixed for print.</figcaption>
-		</figure>
+			<figure>
+				<img src="images/typography-widows-orphans.png" width="25%" />
+				<figcaption>Stray words on their own are hard to prevent online, but can, and must, be fixed for print.</figcaption>
+			</figure>
 
-		<p>Quotations such as testimonials can be made to look different from the main body text, but try to vary only one thing. We typically set quotations in red when the body type is the dark grey. If the quote is attributed, set that in italic, right aligned to the right margin of the quote if possible and appropriate.</p>
+			<p>Quotations such as testimonials can be made to look different from the main body text, but try to vary only one thing. We typically set quotations in red when the body type is the dark grey. If the quote is attributed, set that in italic, right aligned to the right margin of the quote if possible and appropriate.</p>
 
-		<figure>
-			<img src="images/typography-quotes.png" width="25%" />
-			<figcaption>Left-aligned quotation with attribution.</figcaption>
-		</figure>
+			<figure>
+				<img src="images/typography-quotes.png" width="25%" />
+				<figcaption>Left-aligned quotation with attribution.</figcaption>
+			</figure>
 
-		<p>Icons within text should be set so that they do not affect the line spacing of paragraphs and are roughly the same height as text characters. This is very likely to happen for websites.</p>
+			<p>Icons within text should be set so that they do not affect the line spacing of paragraphs and are roughly the same height as text characters. This is very likely to happen for websites.</p>
 
-		<figure>
-			<img src="images/typography-icons.png" width="25%" />
-			<figcaption>The first icon is set correctly, the second isn't.</figcaption>
-		</figure>
+			<figure>
+				<img src="images/typography-icons.png" width="25%" />
+				<figcaption>The first icon is set correctly, the second isn't.</figcaption>
+			</figure>
 
-		<p>Bulleted text needs care to make sure the reader can distinguish each item clearly, but the whole list should be viewable as one block. Try separating list items with half the vertical space you would use between paragraphs. The bullets can be exdented so that the left margin of the text aligns with paragraphs, or they can be indented so there is a clear change in margin. Either style is fine, but stick to just one in each document.</p>
+			<p>Bulleted text needs care to make sure the reader can distinguish each item clearly, but the whole list should be viewable as one block. Try separating list items with half the vertical space you would use between paragraphs. The bullets can be exdented so that the left margin of the text aligns with paragraphs, or they can be indented so there is a clear change in margin. Either style is fine, but stick to just one in each document.</p>
 
-		<figure>
-			<img src="images/typography-lists.png" width="25%" />
-			<figcaption>A simple indented list. The space between items is half that between the list and surrounding paragraphs.</figcaption>
-		</figure>
+			<figure>
+				<img src="images/typography-lists.png" width="25%" />
+				<figcaption>A simple indented list. The space between items is half that between the list and surrounding paragraphs.</figcaption>
+			</figure>
 
 		</section>
 
 		<section id="icons">
 
-		<h3>Icons</h3>
+			<h3>Icons</h3>
 
-		<p>The Firefly brand has a large library of icons used to illustrate the features of and concepts embodied in the software. These icons are available as separate files and bundled together in an icon font. We can send these out to you.</p>
+			<p>The Firefly brand has a large library of icons used to illustrate the features of and concepts embodied in the software. These icons are available as separate files and bundled together in an icon font. We can send these out to you.</p>
 
-		<figure>
-			<img src="images/icons.png" width="60%" />
-			<figcaption>Some of the icons.</figcaption>
-		</figure>
+		</section>
 
-		<p>We have a set of patterns that use the icons (see below).</p>
+		<section id="charts-diagrams">
 
-		<p>Icons can be used with text to illustrate concepts and features in Firefly. Use the icons appropriately and check with this list to avoid using them for the wrong things.</p>
+			<h3>Charts &amp; diagrams</h3>
 
-		<p>Usual rules apply - don't stretch the icons or redraw them in any way. If you need new icons then check with Firefly design before creating them - they may already exist.</p>
+			<p>Words</p><p>Words</p><p>Words</p><p>Words</p><p>Words</p><p>Words</p><p>Words</p><p>Words</p>
 
-		<p>If you use the icon font to include the icons in any print work, make sure you outline the text before sending it to print.</p>
+		</section>
 
-		<h3 id="patterns-textures">Patterns &amp; Textures</h3>
+		<section id="patterns-textures">
 
-		<h4 id="red-backgrounds">Red background</h4>
+			<h3>Patterns &amp; Textures</h3>
 
-		<p>Firefly has a set of red patterned backgrounds available on request. The patterns are created from elements of the logo and are an important way of adding texture and decoration to designs.</p>
-
-		<figure class="outlined">
-			<img src="images/pattern-1.png" width="24.5%" />
-			<img src="images/pattern-2.png" width="24.5%" />
-			<img src="images/pattern-3.png" width="24.5%" />
-			<img src="images/pattern-landscape.png" width="24.5%" />
-		</figure>
-
-		<p>Elements can be moved if necessary (but try to avoid doing so), but make sure all elements are connected to an edge. The wing elements in particular should appear to come from the right hand edge of the design, and the body elements should be connected to the top and bottom. The different elements have variations of the Firefly red and use layer modes in Illustrator to create depth and pattern.</p>
-
-		<p>If the pattern background is part of the design, you should not use the Pantone reference for any part that is overlapping it.</p>
-
-		<h4 id="icon-pattern">Icon pattern</h4>
-
-		<p>We have pre-built icon patterns for general use and for specific events, available on request. Try not to alter any of these.</p>
-
-		<figure>
-			<img src="images/icon-pattern.png" width="25%" />
-			<figcaption>The main icon pattern.</figcaption>
-		</figure>
-
-		<figure>
-			<img src="images/web-conference-image-big.jpg" width="75%" />
-			<figcaption>The icon pattern for the learning conference.</figcaption>
-		</figure>
-
-		<p>If you need to create a new pattern, take care to match the balance and even variation of icon types and opacities across the design.</p>
-
-		<p>Don't overlap icons. Ensure even spacing between all of them.</p>
-
-		<p>Vary sizes and opacities, but don't create extremes of either.</p>
-
-		<p>Often there will be a 'key' icon to mark a specific event - this should be set aligned with the title and at a complementary size and style as the text.</p>
+			<p>Words</p>
 
 		</section>
 
 		<section id="boxes">
 
-		<h3>Boxes, containers and outlines</h3>
+			<h3>Boxes, containers and outlines</h3>
 
-		<p>If information needs to be 'called out', try using text styles and alignment first.</p>
+			<p>If information needs to be 'called out', try using text styles and alignment first.</p>
 
-		<p>If you need to box-out an item, the box should ideally not float on the page, try to anchor it to something.</p>
+			<p>If you need to box-out an item, the box should ideally not float on the page, try to anchor it to something.</p>
 
-		<p>Borders should be subtly rounded. The idea is to match the roundedness of the brand font Akko. So no bouncy bubbles or sharp edges.</p>
+			<p>Borders should be subtly rounded. The idea is to match the roundedness of the brand font Akko. So no bouncy bubbles or sharp edges.</p>
 
-		<p>Boxes can be red when the page is white, or white when the page is red. For specific events other colours are used, but refer to the guidelines for those events in that case.</p>
+			<p>Boxes can be red when the page is white, or white when the page is red. For specific events other colours are used, but refer to the guidelines for those events in that case.</p>
 
-		<p>Border widths should always complement the stroke widths of the text.</p>
+			<p>Border widths should always complement the stroke widths of the text.</p>
 
 		</section>
 
 		<section id="photography">
 
-		<h3>Photography</h3>
+			<h3>Photography</h3>
 
-		<p>Photography has not been a major part of the Firefly brand. We're thinking of various things but for now don't assume we have suitable photos.</p>
+			<p>Photography has not been a major part of the Firefly brand. We're thinking of various things but for now don't assume we have suitable photos.</p>
 
-		<p>Having said that, we have a selection of photographs of the Firefly staff and offices, available on request.</p>
-
-		</section>
-
-		<section id="using-the-brand">
-
-		<h2>Using the Brand</h2>
+			<p>Having said that, we have a selection of photographs of the Firefly staff and offices, available on request.</p>
 
 		</section>
 
-		<section>
+		<section id="screenshots">
 
-		<h3 id="basic-principles">Basic principles</h3>
+			<h3>Screenshots</h3>
 
-		<p>Firefly's brand is one that emphasises clarity and straightforwardness. In a visual sense:</p>
-
-		<ul>
-			<li>Layouts should be simple and clear. Pages, leaflets, posters and spreads in brochures should have one clear message, with the minimum of design elements necessary to support that. Nothing should feel vague or accidental.</li>
-
-			<li>Counterpoint and balance are key to Firefly layouts. Aim for asymmetric layouts balanced by a bold quote or a graphical element. White space can be used to add liveliness and movement to a flow of text. An increased or decreased margin on a key paragraph or quote can draw the eye to important points and aid reading by providing visual landmarks.</li>
-		</ul>
-
-		<p>Firefly layouts start with a core axis. Normally this is provided by vertical stroke of the first 'f' in the logo. Note also that the logo should be positioned carefully so that it relates to the edge of the page, layout or browser viewport.</p>
-
-		<figure>
-			<img src="images/alignment.png" width="75%" />
-			<figcaption>Making the core vertical axis of a layout.</figcaption>
-		</figure>
-
-		<h4 id="optical-alignment">Optical alignment</h4>
-
-		<p> On narrow layouts the axis can start from the logo symbol. As the symbol is curved, they eye doesn't 'read' the left edge starting precisely where it actually does, so start your axis a little further to the right, as illustrated above.</p>
-
-		<h4 id="decorative-elements">Decorative elements</h4>
-
-		<p>Firefly uses patterns and textures as decorative elements. They are designed to work in large linear panels that span layouts and provide an anchor for the headings and body type.</p>
-
-		<p>Icons should be used meaningfully - they are designed to illustrate specific things. Grouped together they can provide an attractive pattern (as above) or show off the breadth of features in Firefly. Used individually they should be connected to text that specifically described the feature they relate to. Don't scatter them about.</p>
-
-		<p>The red and white are the key colours of Firefly. We use a blue to emphasise links and interactive elements online. In print we use the blue on screenshots and other product-elements (such as app icons) but not for page layouts or design elements themselves.</p>
-
-		<h4 id="example-layouts">Example layouts</h4>
-
-		<p>Layout and typography are key to representing the Firefly brand. Below are some sketch outlines of layouts we have and will use, and some examples we won't.</p>
-
-		<div class="image-set">
-
-			<figure class="good-layout">
-				<img src="images/good-01.png" />
-			</figure>
-
-			<figure class="good-layout">
-				<img src="images/good-02.png" />
-			</figure>
-
-			<figure class="good-layout">
-				<img src="images/good-03.png" />
-				<figcaption>This colour scheme is purely for the Firefly Learning Conference (guidelines tbd).</figcaption>
-			</figure>
-
-			<figure class="good-layout">
-				<img src="images/good-04.png" />
-			</figure>
-
-			<figure class="good-layout">
-				<img src="images/good-05.png" />
-			</figure>
-
-			<figure class="good-layout">
-				<img src="images/good-06.png" />
-			</figure>
-
-			<figure class="good-layout">
-				<img src="images/good-07.png" />
-			</figure>
-
-			<figure class="good-layout">
-				<img src="images/good-08.png" />
-				<figcaption>Clean and spacious with neat alignment.</figcaption>
-			</figure>
-
-			<figure class="good-layout">
-				<img src="images/good-09.png" />
-				<figcaption>The third column of graphic elements is aligned to the axis, avoiding a static layout.</figcaption>
-			</figure>
-
-		</div>
-
-		<h4 id="layouts-to-avoid">Layouts to avoid</h4>
-
-		<div class="image-set">
-
-			<figure class="bad-layout">
-				<img src="images/bad-01.png" />
-				<figcaption>Don't use the logotype on its own like this.</figcaption>
-			</figure>
-
-			<figure class="bad-layout">
-				<img src="images/bad-02.png" />
-				<figcaption>Avoid centring things.</figcaption>
-			</figure>
-
-			<figure class="bad-layout">
-				<img src="images/bad-03.png" />
-				<figcaption>No structure, off-brand icons.</figcaption>
-			</figure>
-
-			<figure class="bad-layout">
-				<img src="images/bad-04.png" />
-				<figcaption>Too much text. Some technical reference documents may need to be dense, but avoid this otherwise.</figcaption>
-			</figure>
-
-			<figure class="bad-layout">
-				<img src="images/bad-05.png" />
-				<figcaption>If there's a clear logo in the photo, avoid cropping it.</figcaption>
-			</figure>
-
-			<figure class="bad-layout">
-				<img src="images/bad-06.png" />
-				<figcaption>The logo is poorly contrasted and doesn't line up with anything.</figcaption>
-			</figure>
-
-			<figure class="bad-layout">
-				<img src="images/bad-07.png" />
-				<figcaption>Too busy, and poor text alignment between left and right.</figcaption>
-			</figure>
-
-			<figure class="bad-layout">
-				<img src="images/bad-08.png" />
-				<figcaption>No structure, text and line heights are all over the place, graphic elements misaligned.</figcaption>
-			</figure>
-
-			<figure class="bad-layout">
-				<img src="images/bad-09.png" />
-				<figcaption>Wrong font and italic heading, line length too long, centring headings.</figcaption>
-			</figure>
-
-		</div>
-
-		</section>
-<!--
-		<section id="branded-materials">
-
-		<h2>Branded Materials</h2>
-
-		<h3 id="brochure">Brochure</h3>
-
-		<p>Description - show sample spreads</p>
-
-		<p>Link to the current brochure</p>
-
-
-		<h3 id="business-cards">Business cards</h3>
-
-		<p>Info on requesting cards</p>
-
-		<p>Examples</p>
-
-
-		<h3 id="leaflets">Leaflets</h3>
-
-		<p>Show examples.</p>
-
-		<p>Downloadable InDesign files and templates</p>
-
-
-		<h3 id="stands-events">Stands at events</h3>
-
-		<p>Photos of BETT, other stands</p>
-
-
-		<h3 id="popup-banners">Pop up banners</h3>
-
-		<p>Photos</p>
-
-		<p>Downloadable InDesign files of existing banners</p>
-
-
-		<h3 id="merchandise">Small merchandise</h3>
-
-		<p>Use of brand elements on merchandise - small sizes, colour match (being realistic) etc.</p>
-
-		<p>Photos of existing merch</p>
+			<p></p>
 
 		</section>
 
-		<section>
+		<section id="layouts">
 
-		<h2 id="templates">Brand templates and downloadables</h2>
+			<h2>Layouts</h2>
 
-		<p>Things that are branded but are fairly fixed</p>
-
-
-		<h3 id="sales-templates">Sales templates</h3>
-
-		<p>Word will let you change fonts, margins, and whatever. Please don't do that.</p>
-
-
-		<h3 id="email-footer">Email footer</h3>
-
-		<p>Example, downloadable files</p>
-
-
-		<h3 id="letterheads">Letterheads</h3>
-
-		<p>Downloadable PDF</p>
-
-
-		<h3 id="compliment-slips">Compliment slips</h3>
-
-		<p>Downloadable PDF</p>
-
-
-		<h3 id="invoices-orders">Invoices, purchase orders, etc.</h3>
-
-		<p>Downloadable PDF</p>
-
-
-		<h3 id="recruitment">Recruitment</h3>
-
-		<p>Downloadable PDF</p>
 		</section>
--->
+
+		<section> <!-- layouts -->
+
+			<h3 id="basic-principles">Basic principles</h3>
+
+			<p>Firefly's brand is one that emphasises clarity and straightforwardness. In a visual sense:</p>
+
+			<ul>
+				<li>Layouts should be simple and clear. Pages, leaflets, posters and spreads in brochures should have one clear message, with the minimum of design elements necessary to support that. Nothing should feel vague or accidental.</li>
+
+				<li>Counterpoint and balance are key to Firefly layouts. Aim for asymmetric layouts balanced by a bold quote or a graphical element. White space can be used to add liveliness and movement to a flow of text. An increased or decreased margin on a key paragraph or quote can draw the eye to important points and aid reading by providing visual landmarks.</li>
+			</ul>
+
+			<p>Firefly layouts start with a core axis. Normally this is provided by vertical stroke of the first 'f' in the logo. Note also that the logo should be positioned carefully so that it relates to the edge of the page, layout or browser viewport.</p>
+
+			<figure>
+				<img src="images/alignment.png" width="75%" />
+				<figcaption>Making the core vertical axis of a layout.</figcaption>
+			</figure>
+
+			<h4 id="optical-alignment">Optical alignment</h4>
+
+			<p> On narrow layouts the axis can start from the logo symbol. As the symbol is curved, they eye doesn't 'read' the left edge starting precisely where it actually does, so start your axis a little further to the right, as illustrated above.</p>
+
+			<h4 id="decorative-elements">Decorative elements</h4>
+
+			<p>Firefly uses patterns and textures as decorative elements. They are designed to work in large linear panels that span layouts and provide an anchor for the headings and body type.</p>
+
+			<p>Icons should be used meaningfully - they are designed to illustrate specific things. Grouped together they can provide an attractive pattern (as above) or show off the breadth of features in Firefly. Used individually they should be connected to text that specifically described the feature they relate to. Don't scatter them about.</p>
+
+			<p>The red and white are the key colours of Firefly. We use a blue to emphasise links and interactive elements online. In print we use the blue on screenshots and other product-elements (such as app icons) but not for page layouts or design elements themselves.</p>
+
+			<h4 id="example-layouts">Example layouts</h4>
+
+			<p>Layout and typography are key to representing the Firefly brand. Below are some sketch outlines of layouts we have and will use, and some examples we won't.</p>
+
+			<div class="image-set">
+
+				<figure class="good-layout">
+					<img src="images/good-01.png" />
+				</figure>
+
+				<figure class="good-layout">
+					<img src="images/good-02.png" />
+				</figure>
+
+				<figure class="good-layout">
+					<img src="images/good-03.png" />
+					<figcaption>This colour scheme is purely for the Firefly Learning Conference (guidelines tbd).</figcaption>
+				</figure>
+
+				<figure class="good-layout">
+					<img src="images/good-04.png" />
+				</figure>
+
+				<figure class="good-layout">
+					<img src="images/good-05.png" />
+				</figure>
+
+				<figure class="good-layout">
+					<img src="images/good-06.png" />
+				</figure>
+
+				<figure class="good-layout">
+					<img src="images/good-07.png" />
+				</figure>
+
+				<figure class="good-layout">
+					<img src="images/good-08.png" />
+					<figcaption>Clean and spacious with neat alignment.</figcaption>
+				</figure>
+
+				<figure class="good-layout">
+					<img src="images/good-09.png" />
+					<figcaption>The third column of graphic elements is aligned to the axis, avoiding a static layout.</figcaption>
+				</figure>
+
+			</div>
+
+			<h4 id="layouts-to-avoid">Layouts to avoid</h4>
+
+			<div class="image-set">
+
+				<figure class="bad-layout">
+					<img src="images/bad-01.png" />
+					<figcaption>Don't use the logotype on its own like this.</figcaption>
+				</figure>
+
+				<figure class="bad-layout">
+					<img src="images/bad-02.png" />
+					<figcaption>Avoid centring things.</figcaption>
+				</figure>
+
+				<figure class="bad-layout">
+					<img src="images/bad-03.png" />
+					<figcaption>No structure, off-brand icons.</figcaption>
+				</figure>
+
+				<figure class="bad-layout">
+					<img src="images/bad-04.png" />
+					<figcaption>Too much text. Some technical reference documents may need to be dense, but avoid this otherwise.</figcaption>
+				</figure>
+
+				<figure class="bad-layout">
+					<img src="images/bad-05.png" />
+					<figcaption>If there's a clear logo in the photo, avoid cropping it.</figcaption>
+				</figure>
+
+				<figure class="bad-layout">
+					<img src="images/bad-06.png" />
+					<figcaption>The logo is poorly contrasted and doesn't line up with anything.</figcaption>
+				</figure>
+
+				<figure class="bad-layout">
+					<img src="images/bad-07.png" />
+					<figcaption>Too busy, and poor text alignment between left and right.</figcaption>
+				</figure>
+
+				<figure class="bad-layout">
+					<img src="images/bad-08.png" />
+					<figcaption>No structure, text and line heights are all over the place, graphic elements misaligned.</figcaption>
+				</figure>
+
+				<figure class="bad-layout">
+					<img src="images/bad-09.png" />
+					<figcaption>Wrong font and italic heading, line length too long, centring headings.</figcaption>
+				</figure>
+
+			</div>
+
+		</section>
 	</div>
 
 </body>
