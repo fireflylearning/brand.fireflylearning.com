@@ -66,8 +66,13 @@
 		max-width: 100%;
 	}
 
+	header {
+		margin-left: 27%;
+		margin-bottom: 1em;
+	}
+
 	div#main {
-		margin-left: 25%;
+		margin-left: 27%;
 		margin-bottom: 25em;
 	}
 
@@ -130,6 +135,7 @@
 		bottom: 0;
 		width: 22.5%;
 		overflow: auto;
+		margin-top: 2rem;
 		padding: 0 1.25rem;
 	}
 
@@ -262,6 +268,7 @@
 	}
 
 	.image-set p {
+		width: 100%;
 		clear: left;
 		margin-top: 1rem;
 		padding-bottom: 1rem;
@@ -343,10 +350,46 @@
 		color: #999;
 	}
 
+	@media only screen and (max-width: 900px) {
+
+		div#main {
+			margin-left: 0;
+			border-top: 1px dotted #666;
+			margin-bottom: 25em;
+			padding: 0 1.25rem;
+		}
+
+		header {
+			margin-left: 0;
+			margin-bottom: 1em;
+			padding: 0 1.25rem;			
+		}
+
+		nav {
+			position: static;
+			margin-top: 0;
+			margin-bottom: 1em;
+			width: 100%;
+			overflow: auto;
+			padding: 0 1.25rem;
+		}
+	}
+
 	</style>
 </head>
 
 <body>
+
+
+	<header>
+		<section id="title">
+			<h1>
+				The Firefly brand
+				<span class="updated">Updated <time datetime="2016-09">September 2016</time></span>
+			</h1>
+		</section>
+	</header>
+
 
 	<nav id="nav">
 		<ul>
@@ -369,9 +412,7 @@
 					<li><a href="#basic-principles">Basic principles</a></li>
 					<li><a href="#typography">Typography</a></li>
 					<li><a href="#grids">Grids</a></li>
-					<li><a href="#decorative-elements">Decorative elements</a></li>
-					<li><a href="#example-layouts">Example layouts</a></li>
-					<li><a href="#layouts-to-avoid">Layouts to avoid</a></li>
+					<li><a href="#themes">Themes</a></li>
 				</ul>
 			</li>
 		</ul>
@@ -381,18 +422,9 @@
 
 		<section id="top">
 
-			<header>
-
-				<h1>
-					The Firefly brand
-					<span class="updated">Updated <time datetime="2016-09">September 2016</time></span>
-				</h1>
-
-			</header>
-
 			<h2>Introduction</h2>
 
-			<p>These brand guidelines are for designers and artworkers to create things that work within the Firefly brand. There's a lot more detail below on the application of it. We are producing a comprehensive document <em>how to write for Firefly</em> covering tone of voice and key phrases, but the basic ideas are:</p>
+			<p>These brand guidelines are for designers and artworkers to create things that work within the Firefly brand. There's a lot more detail below on the application of it. The basic ideas behind the brand are:</p>
 
 			<ul>
 				<li>Competent - online: everything lining up properly, no missing images or fonts, no trashy gimmicks, no shaky animations or poorly performing pages. Things should feel well built. In print: readable well-set text, decent margins, uncrowded layouts, high quality imagery, less-is-more.</li>
@@ -731,7 +763,7 @@
 				<figcaption>If the background is red or photographic, the smileys should be filled in white.</figcaption>
 			</figure>
 
-			<p>The faces are deliberately abstract, but inevitably will suggest difference in gender and skin colour. As a result, make sure you use a variety of face types.</p>
+			<p>The faces are deliberately abstract, but inevitably will suggest difference in gender and skin colour. As a result, make sure you use a variety of faces in your work.</p>
 
 			<p>Don't create too much size variation in the faces. Keep to the ranges shown here.</p>
 
@@ -764,7 +796,7 @@
 
 			<p>We often need to illustrate stats about Firefly and how it's used. We've created some illustrations in vector format showing people and school buildings for use on white, Firefly red and Firefly blue. Contact us for these.</p>
 
-			<p>For the pie charts and graphics we use a font called Chartwell, available from Fontshop. As it relies on Opentype features we outline the illustration before using it online.</p>
+			<p>For the pie charts and graphics we use a font called <a href="https://www.fontshop.com/families/ff-chartwell" target="_blank">Chartwell, available from Fontshop</a>. As it relies on Opentype features we outline the illustration before using it online.</p>
 
 			<figure>
 				<img src="images/infographics.png">
@@ -807,6 +839,7 @@
 					<img src="images/pattern-3.png" />
 					<figcaption>A grey variant of the pattern.</figcaption>
 				</figure>
+				<p class=""><a href="downloads/patterns.zip">Download all three patterns</a></p>
 			</div>
 
 			<p>The background pattern is made up from elements of the logo. The broad diagonal stroke should reach from beyond the top and bottom margins across the page - you must never have it finish anywhere <em>on</em> the page. The horizontal wing elements must <em>always</em> begin beyond the right hand edge and extend leftwards. The implication is that they are still attached to the logo body.</p>
@@ -834,9 +867,57 @@
 
 			<h3>Photography</h3>
 
-			<p>Photography has not been a major part of the Firefly brand. We're thinking of various things but for now don't assume we have suitable photos.</p>
+			<p>We use photographs as large structural elements in layouts so that they run mark out a large section of the grid or page. We don't dot them around in empty space or within text.</p>
 
-			<p>Having said that, we have a selection of photographs of the Firefly staff and offices, available on request.</p>
+			<p>We have commissioned photography of Firefly events, and occasionally buy stock photos</p>
+
+			<h4>Subjects</h4>
+
+			<ul>
+
+				<li>Our photographs focus on people having conversations with other people or using Firefly</li>
+
+				<li>Aim for a 'candid' feel, so that the photos aren't posed or artificial</li>
+
+				<li>Related to that: facial expressions should appear genuine: interest, concentration, satisfaction and so on. People enjoy using Firefly but a teacher doing a load of marking is unlikely to be laughing about it.</li>
+
+				<li>We use abstract photography, but obvious metaphors should be avoided</li>
+
+				<li>Avoid clichés</li>
+
+			</ul>
+
+			<h4>Quality</h4>
+
+			<ul>
+
+				<li>All the photos should have effective use of depth of field, avoid distracting elements and have been professionally colour-corrected</li>
+
+				<li>All photographs in a document must have the same colour adjustment and grading as each other. Avoid overly-cold effects.</li>
+
+				<li>Never use photographs with obvious effects such as distortion, bevels or drop shadow.</li>
+
+			</ul>
+
+			<figure>
+				<img src="images/photography.jpg" />
+				<figcaption>A selection of Firefly images</figcaption>
+			</figure>
+
+			<div class="image-set gallery wide">
+				<figure class="outlined">
+					<img src="images/photography_example-1.png" />
+					<figcaption>Using a large Firefly photo as the main element</figcaption>
+				</figure>
+				<figure class="outlined">
+					<img src="images/photography_example-2.png" />
+					<figcaption>Combining with other elements</figcaption>
+				</figure>
+				<figure class="outlined">
+					<img src="images/photography_example-wrong.png" />
+					<figcaption>Don't do this. The photos are all clichés and have very different colour grading.</figcaption>
+				</figure>
+			</div>
 
 		</section>
 
@@ -844,7 +925,28 @@
 
 			<h3>Screenshots</h3>
 
-			<p></p>
+			<p>We use screenshots of Firefly apps and on the web in a lot of material. The information on screen <strong>must</strong> be:</p>
+
+			<ul>
+
+				<li>Free to use or properly licensed for this specific use. Do not include copyrighted text or photography otherwise.</li>
+
+				<li>Checked for spelling and grammar</li>
+
+				<li>Make sense in the context. If a page title mentions Shakespeare, the photos and body text shoould be appropriate</li>
+
+				<li>Not be offensive. All test data must be created with the idea that it will go public</li>
+
+				<li>Attractively laid-out</li>
+
+			</ul>
+
+			<p>When presenting screenshots we often try to set the context by putting them in a device frame. We have a set of these as vector illustrations. Contact us for them.</p>
+
+			<figure>
+				<img src="images/device-frames.png" />
+				<figcaption>Our device frames on light and dark backgrounds. Contact us for these.</figcaption>
+			</figure>
 
 		</section>
 
@@ -972,7 +1074,6 @@
 
 			<p>Bulleted text needs care to make sure the reader can distinguish each item clearly, but the whole list should be viewable as one block. Try separating list items with half the vertical space you would use between paragraphs. The bullets can be exdented so that the left margin of the text aligns with paragraphs, or they can be indented so there is a clear change in margin. Either style is fine, but stick to just one in each document.</p>
 
-
 		</section>
 
 
@@ -1031,15 +1132,37 @@
 				</figure>
 			</div>
 
-			<h4 id="example-layouts">Example layouts</h4>
-
-			<p>Layout and typography are key to representing the Firefly brand. Below are some sketch outlines of layouts we have and will use, and some examples we won't.</p>
+		</section>
 
 
-			<h4 id="layouts-to-avoid">Layouts to avoid</h4>
+		<section id="themes">
 
+			<h3>Themes</h3>
+
+			<p>We have four themes that give Firefly a particular look and feel. Each of the themes can be customised with school branding to varying amounts.</p>
+
+			<p>We have a dedicated site for our themes where schools can choose from the various customisation options: <a href="http://themes.fireflylearning.com">Firefly themes site</a>.</p>
+
+			<h4>Melody</h4>
+
+			<p>Melody is bright, fresh and modern. The design appeals to all ages, with strong colours and soft rounded edges contrasting with spacious layouts and sans-serif typography and crisp iconography.</p>
+
+			<p>We use screenshots and illustrations of Melody in a lot of documentation and materials.</p>
+
+			<h4>Nautilus</h4>
+
+			<p>Nautilus is bold with a scientific and technological feel. The strong header can be customised with school imagery and layouts are crisp and easy to scan.</p>
+
+			<h4>Folio</h4>
+
+			<p>Inspired by old school workbooks and manila folders, Folio has a traditional feel. The tones and colours are those of paper and fabric, traditional materials used in a modern way.</p>
+
+			<h4>Storybook</h4>
+
+			<p>Specifically designed with younger students in mind, Storybook is bright and colourful with large easy-to-read type, simple layouts and engaging design elements. Menus and administrative elements are minimised to avoid distractions.</p>
 
 		</section>
+
 	</div>
 
 </body>
