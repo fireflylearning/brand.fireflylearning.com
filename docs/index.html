@@ -66,8 +66,13 @@
 		max-width: 100%;
 	}
 
+	header {
+		margin-left: 27%;
+		margin-bottom: 1em;
+	}
+
 	div#main {
-		margin-left: 25%;
+		margin-left: 27%;
 		margin-bottom: 25em;
 	}
 
@@ -130,6 +135,7 @@
 		bottom: 0;
 		width: 22.5%;
 		overflow: auto;
+		margin-top: 2rem;
 		padding: 0 1.25rem;
 	}
 
@@ -344,10 +350,46 @@
 		color: #999;
 	}
 
+	@media only screen and (max-width: 900px) {
+
+		div#main {
+			margin-left: 0;
+			border-top: 1px dotted #666;
+			margin-bottom: 25em;
+			padding: 0 1.25rem;
+		}
+
+		header {
+			margin-left: 0;
+			margin-bottom: 1em;
+			padding: 0 1.25rem;			
+		}
+
+		nav {
+			position: static;
+			margin-top: 0;
+			margin-bottom: 1em;
+			width: 100%;
+			overflow: auto;
+			padding: 0 1.25rem;
+		}
+	}
+
 	</style>
 </head>
 
 <body>
+
+
+	<header>
+		<section id="title">
+			<h1>
+				The Firefly brand
+				<span class="updated">Updated <time datetime="2016-09">September 2016</time></span>
+			</h1>
+		</section>
+	</header>
+
 
 	<nav id="nav">
 		<ul>
@@ -370,9 +412,7 @@
 					<li><a href="#basic-principles">Basic principles</a></li>
 					<li><a href="#typography">Typography</a></li>
 					<li><a href="#grids">Grids</a></li>
-					<li><a href="#decorative-elements">Decorative elements</a></li>
-					<li><a href="#example-layouts">Example layouts</a></li>
-					<li><a href="#layouts-to-avoid">Layouts to avoid</a></li>
+					<li><a href="#themes">Themes</a></li>
 				</ul>
 			</li>
 		</ul>
@@ -381,15 +421,6 @@
 	<div id="main">
 
 		<section id="top">
-
-			<header>
-
-				<h1>
-					The Firefly brand
-					<span class="updated">Updated <time datetime="2016-09">September 2016</time></span>
-				</h1>
-
-			</header>
 
 			<h2>Introduction</h2>
 
